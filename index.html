@@ -26,7 +26,13 @@
     </head>
 	<body>
 
-		<script>function animate(t,e,n,o,a,i,c){if(t){var r=(new Date).getTime(),l=setInterval(function(){var u=Math.min(1,((new Date).getTime()-r)/i);c?t[e]=o+u*(a-o)+n:t.style[e]=o+u*(a-o)+n,1==u&&clearInterval(l)},25);t.style[e]=o+n}}function cl(t,e){for(var n=document.getElementsByTagName("a"),o=0;5>o;o++)n[o].onclick=function(){return!1};var a=document.getElementById(t);return animate(document.body,"scrollTop","",0,a.offsetTop,e,!0),!1}</script>	
+		<script>function animate(t,e,n,o,a,i,c){if(t){var r=(new Date).getTime(),l=setInterval(function(){var u=Math.min(1,((new Date).getTime()-r)/i);c?t[e]=o+u*(a-o)+n:t.style[e]=o+u*(a-o)+n,1==u&&clearInterval(l)},25);t.style[e]=o+n}}function cl(t,e){for(var n=document.getElementsByTagName("a"),o=0;5>o;o++)n[o].onclick=function(){return!1};	var e = document.documentElement;
+	if(e.scrollTop===0){
+		var t = e.scrollTop;
+		++e.scrollTop;
+		e = t+1===e.scrollTop--?e:document.body;
+	} 
+var a=document.getElementById(t);return animate(e,"scrollTop","",0,a.offsetTop,e,!0),!1}</script>	
 	    <div class=header-container>
             <header class="wrapper clearfix">
 				<h1 class=title>The web is changing the world... </h1></header>
