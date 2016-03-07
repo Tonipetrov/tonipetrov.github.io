@@ -22,7 +22,7 @@
         <!--[if lt IE 9]><script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script><![endif]-->  
     </head>
 	<body>
-		<script>function animate(t,e,n,o,a,i,c){if(t){var r=(new Date).getTime(),l=setInterval(function(){var u=Math.min(1,((new Date).getTime()-r)/i);c?t[e]=o+u*(a-o)+n:t.style[e]=o+u*(a-o)+n,1==u&&clearInterval(l)},25);t.style[e]=o+n}}function cl(t,e){for(var n=document.getElementsByTagName("a"),o=0;5>o;o++)n[o].onclick=function(){return!1};var a=document.getElementById(t);return animate(document.body,"scrollTop","",0,a.offsetTop,e,!0),!1}</script>	
+		<script>function animate(e,t,n,o,l,a,c){if(e){var r=(new Date).getTime(),m=setInterval(function(){var i=Math.min(1,((new Date).getTime()-r)/a);c?e[t]=o+i*(l-o)+n:e.style[t]=o+i*(l-o)+n,1==i&&clearInterval(m)},25);e.style[t]=o+n}}function cl(e,t){for(var n=document.getElementsByTagName("a"),o=0;o<n.length;o++)n[o].onclick=function(){return!1};var l=document.getElementById(e),a=document.documentElement;if(0===a.scrollTop){var c=a.scrollTop;++a.scrollTop,a=c+1===a.scrollTop--?a:document.body}return animate(a,"scrollTop","",0,l.offsetTop,t,!0),!1}</script>
 	    <div class=header-container>
 	    <div id="form-submitted">Thank you for your message! I will get back to you shortly.</div>
         <header class="wrapper clearfix">
